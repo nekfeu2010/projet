@@ -1,0 +1,243 @@
+# 🎨 Probeats – Guidelines & Design System
+
+Ce document décrit les **fondations** et **règles** du design Probeats pour faciliter l’intégration front-end et assurer la cohérence entre desktop et mobile.
+
+---
+
+## 1️⃣ Grilles & Responsive
+
+### Desktop
+- **Grille** : 12 colonnes
+- **Largeur max** : 1160px
+- **Gutter** : 24px
+- **Marges extérieures** : 32px
+- **Alignement** : centré dans le viewport
+
+### Mobile
+- **Grille** : 4 colonnes
+- **Gutter** : 16px
+- **Marges extérieures** : 16–20px
+- **Breakpoint mobile** : ≤ 768px
+
+### Breakpoints recommandés
+- **Mobile** : 360–430px
+- **Tablet** : 768–1024px
+- **Desktop** : ≥ 1280px
+
+---
+
+## 2️⃣ Couleurs (Tokens)
+
+| Nom                 | Hex       | Usage |
+|---------------------|-----------|-------|
+| Primary / 500       | `#782221` | Boutons principaux, liens actifs |
+| Primary / 700       | `#5a1717` | Hover boutons primaires |
+| Secondary / 500     | `#dbc2a4` | Fond clair, cartes, arrière-plans secondaires |
+| Neutral / 900       | `#2c1d27` | Texte principal |
+| Neutral / 500       | `#666666` | Texte secondaire |
+| Neutral / 200       | `#EAEAEA` | Bordures, séparateurs |
+| Feedback / Success  | `#2ECC71` | Confirmation |
+| Feedback / Error    | `#E74C3C` | Erreur |
+| Feedback / Warning  | `#F1C40F` | Attention |
+
+---
+
+## 3️⃣ Typographie
+
+**Police principale** : [Barlow](https://fonts.google.com/specimen/Barlow)  
+**Graisses utilisées** : 400 (Regular), 600 (Semi-bold), 700 (Bold)
+
+| Style  | Poids | Taille (Desktop) | Taille (Mobile) | Interlignage |
+|--------|-------|------------------|-----------------|--------------|
+| H1     | 700   | 48px              | 32px            | 120%         |
+| H2     | 700   | 36px              | 28px            | 120%         |
+| H3     | 600   | 28px              | 24px            | 120%         |
+| Body   | 400   | 16px              | 16px            | 150%         |
+| Caption| 400   | 14px              | 14px            | 150%         |
+
+---
+
+## 4️⃣ Composants
+
+### Boutons
+Variants :
+- **Size** : S / M / L
+- **State** : Default / Hover / Pressed / Disabled
+- **Icon** : Leading / Trailing / None
+
+Règles :
+- Bouton primaire : fond `Primary/500`, texte blanc
+- Hover : fond `Primary/700`
+- Bouton secondaire : fond transparent, bordure `Primary/500`, texte `Primary/500`
+- Radius : 8px
+
+### Champs de formulaire
+- Hauteur : 48px
+- Bordure : 1px `Neutral/200`
+- Focus : bordure `Primary/500` + ombre légère
+- Error : bordure `Feedback/Error`
+
+---
+
+## 5️⃣ Iconographie
+- Taille standard : 24px
+- Style : ligne ou plein homogène
+- Couleur : héritée du texte ou des tokens d’UI
+- Format : SVG optimisé
+
+---
+
+## 6️⃣ Images & médias
+- Produits : ratio 1:1 ou 4:3 selon contexte
+- Hero : largeur pleine (`cover`) avec focus centre
+- Exports : PNG @1x et @2x, compression optimisée
+
+---
+
+## 7️⃣ Accessibilité
+- Contraste minimum : **4.5:1** pour texte normal
+- Focus visible sur tous les éléments interactifs
+- Texte alternatif pour toutes les images
+- Ordre de tabulation logique
+
+---
+
+## 8️⃣ Prototypage
+- Flows :
+  1. Home → Produit → Ajouter au panier → Checkout → Confirmation
+  2. Menu mobile ouverture/fermeture
+- Interactions : hover, focus, changement de variante produit
+- Scroll : ancrages pour sections longues
+
+---
+
+## 9️⃣ Nom des calques et composants
+- **Composants** : `C/Button/Primary`  
+- **Variants** : `State=Default`, `Size=M`  
+- **Pages** : `PG/Home`, `PG/Product`, etc.
+- **Assets** : préfixe `icon/`, `img/`, `logo/`
+
+---
+
+✏️ **Dernière mise à jour** : 13 août 2025  # 🎨 Probeats – Guidelines & Design System
+
+Ce document décrit les **fondations** et **règles** du design Probeats pour faciliter l’intégration front-end et assurer la cohérence entre desktop et mobile.
+
+---
+
+## 1️⃣ Grilles & Responsive
+
+### Desktop
+- **Grille** : 12 colonnes
+- **Largeur max** : 1160px
+- **Gutter** : 24px
+- **Marges extérieures** : 32px
+- **Alignement** : centré dans le viewport
+
+### Mobile
+- **Grille** : 4 colonnes
+- **Gutter** : 16px
+- **Marges extérieures** : 16–20px
+- **Breakpoint mobile** : ≤ 768px
+
+### Breakpoints recommandés
+- **Mobile** : 360–430px
+- **Tablet** : 768–1024px
+- **Desktop** : ≥ 1280px
+
+---
+
+## 2️⃣ Couleurs (Tokens)
+
+| Nom                 | Hex       | Usage |
+|---------------------|-----------|-------|
+| Primary / 500       | `#782221` | Boutons principaux, liens actifs |
+| Primary / 700       | `#5a1717` | Hover boutons primaires |
+| Secondary / 500     | `#dbc2a4` | Fond clair, cartes, arrière-plans secondaires |
+| Neutral / 900       | `#2c1d27` | Texte principal |
+| Neutral / 500       | `#666666` | Texte secondaire |
+| Neutral / 200       | `#EAEAEA` | Bordures, séparateurs |
+| Feedback / Success  | `#2ECC71` | Confirmation |
+| Feedback / Error    | `#E74C3C` | Erreur |
+| Feedback / Warning  | `#F1C40F` | Attention |
+
+---
+
+## 3️⃣ Typographie
+
+**Police principale** : [Barlow](https://fonts.google.com/specimen/Barlow)  
+**Graisses utilisées** : 400 (Regular), 600 (Semi-bold), 700 (Bold)
+
+| Style  | Poids | Taille (Desktop) | Taille (Mobile) | Interlignage |
+|--------|-------|------------------|-----------------|--------------|
+| H1     | 700   | 48px              | 32px            | 120%         |
+| H2     | 700   | 36px              | 28px            | 120%         |
+| H3     | 600   | 28px              | 24px            | 120%         |
+| Body   | 400   | 16px              | 16px            | 150%         |
+| Caption| 400   | 14px              | 14px            | 150%         |
+
+---
+
+## 4️⃣ Composants
+
+### Boutons
+Variants :
+- **Size** : S / M / L
+- **State** : Default / Hover / Pressed / Disabled
+- **Icon** : Leading / Trailing / None
+
+Règles :
+- Bouton primaire : fond `Primary/500`, texte blanc
+- Hover : fond `Primary/700`
+- Bouton secondaire : fond transparent, bordure `Primary/500`, texte `Primary/500`
+- Radius : 8px
+
+### Champs de formulaire
+- Hauteur : 48px
+- Bordure : 1px `Neutral/200`
+- Focus : bordure `Primary/500` + ombre légère
+- Error : bordure `Feedback/Error`
+
+---
+
+## 5️⃣ Iconographie
+- Taille standard : 24px
+- Style : ligne ou plein homogène
+- Couleur : héritée du texte ou des tokens d’UI
+- Format : SVG optimisé
+
+---
+
+## 6️⃣ Images & médias
+- Produits : ratio 1:1 ou 4:3 selon contexte
+- Hero : largeur pleine (`cover`) avec focus centre
+- Exports : PNG @1x et @2x, compression optimisée
+
+---
+
+## 7️⃣ Accessibilité
+- Contraste minimum : **4.5:1** pour texte normal
+- Focus visible sur tous les éléments interactifs
+- Texte alternatif pour toutes les images
+- Ordre de tabulation logique
+
+---
+
+## 8️⃣ Prototypage
+- Flows :
+  1. Home → Produit → Ajouter au panier → Checkout → Confirmation
+  2. Menu mobile ouverture/fermeture
+- Interactions : hover, focus, changement de variante produit
+- Scroll : ancrages pour sections longues
+
+---
+
+## 9️⃣ Nom des calques et composants
+- **Composants** : `C/Button/Primary`  
+- **Variants** : `State=Default`, `Size=M`  
+- **Pages** : `PG/Home`, `PG/Product`, etc.
+- **Assets** : préfixe `icon/`, `img/`, `logo/`
+
+---
+
+✏️ **Dernière mise à jour** : 13 août 2025  
